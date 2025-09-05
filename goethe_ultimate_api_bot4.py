@@ -191,6 +191,42 @@ except ImportError:
                             </div>
                         </main>
                         </body>'''
+                elif "next-step?9" in url or "summary" in url:
+                    # Phase 5 - Summary/Order page (based on 7.html/8.html analysis) - CHECK FIRST before next-step
+                    self.text = '''<body class="cs-checkout-page">
+                        <main class="cs-checkout">
+                            <div class="cs-checkout__progress-bar">
+                                <ul class="cs-progress-bar">
+                                    <li class="cs-progress-bar__step cs-progress-bar__step--completed">Selection</li>
+                                    <li class="cs-progress-bar__step cs-progress-bar__step--completed">Personal data</li>
+                                    <li class="cs-progress-bar__step cs-progress-bar__step--completed">Payment</li>
+                                    <li class="cs-progress-bar__step cs-progress-bar__step--completed">Confirmation</li>
+                                    <li class="cs-progress-bar__step cs-progress-bar__step--active">Summary</li>
+                                </ul>
+                            </div>
+                            <div class="cs-summary-section">
+                                <h3>Order Summary</h3>
+                                <div class="cs-order-details">
+                                    <p>Exam: Goethe-Zertifikat B2</p>
+                                    <p>Modules: Reading, Listening</p>
+                                    <p>Price: €150.00</p>
+                                </div>
+                                <div class="cs-order-actions">
+                                    <button class="cs-button cs-button--primary" id="order_subject_to_charge" type="button">
+                                        Order Subject to Charge
+                                    </button>
+                                </div>
+                            </div>
+                        </main>
+                        <script>
+                            window.orderButtonLink = 'https://www.goethe.de/checkout/complete?session=mock';
+                            Wicket.Ajax.ajax({
+                                "u": "orderButtonLink",
+                                "ep": {"event": "click"},
+                                "c": "order_subject_to_charge"
+                            });
+                        </script>
+                        </body>'''
                 elif "next-step" in url:
                     # Phase 3 - Participant selection (based on 3.html analysis)
                     self.text = '''<body class="cs-checkout-page">
@@ -243,6 +279,33 @@ except ImportError:
                                 <div class="cs-order-actions">
                                     <button class="cs-button cs-button--primary" id="order_subject_to_charge" type="button">
                                         Order Subject to Charge
+                                    </button>
+                                </div>
+                            </div>
+                        </main>
+                        <script>
+                            window.orderButtonLink = 'https://www.goethe.de/checkout/complete?session=mock';
+                            Wicket.Ajax.ajax({
+                                "u": "orderButtonLink",
+                                "ep": {"event": "click"},
+                                "c": "order_subject_to_charge"
+                            });
+                        </script>
+                        </body>'''
+                elif "complete" in url or "success" in url:
+                    # Phase 6 - Booking Completion/Success page
+                    self.text = '''<body class="cs-checkout-page">
+                        <main class="cs-checkout">
+                            <div class="cs-success-section">
+                                <h2>🎉 Booking Successful!</h2>
+                                <div class="cs-success-details">
+                                    <p>Your Goethe-Zertifikat B2 exam has been successfully booked.</p>
+                                    <p>Modules: Reading, Listening</p>
+                                    <p>Confirmation Number: GOE-2025-001</p>
+                                </div>
+                                <div class="cs-success-actions">
+                                    <button class="cs-button cs-button--primary" id="download_confirmation" type="button">
+                                        Download Confirmation
                                     </button>
                                 </div>
                             </div>
@@ -367,6 +430,34 @@ except ImportError:
                             </form>
                         </div>
                         </body>'''
+            elif "next-step?9" in url or "summary" in url:
+                # Phase 5 - Summary/Order page (based on 7.html/8.html analysis) - CHECK FIRST before next-step
+                self.text = '''<body class="cs-checkout-page">
+                    <main class="cs-checkout">
+                        <div class="cs-checkout__progress-bar">
+                            <ul class="cs-progress-bar">
+                                <li class="cs-progress-bar__step cs-progress-bar__step--completed">Selection</li>
+                                <li class="cs-progress-bar__step cs-progress-bar__step--completed">Personal data</li>
+                                <li class="cs-progress-bar__step cs-progress-bar__step--completed">Payment</li>
+                                <li class="cs-progress-bar__step cs-progress-bar__step--completed">Confirmation</li>
+                                <li class="cs-progress-bar__step cs-progress-bar__step--active">Summary</li>
+                            </ul>
+                        </div>
+                        <div class="cs-summary-section">
+                            <h3>Order Summary</h3>
+                            <div class="cs-order-details">
+                                <p>Exam: Goethe-Zertifikat B2</p>
+                                <p>Modules: Reading, Listening</p>
+                                <p>Price: €150.00</p>
+                            </div>
+                            <div class="cs-order-actions">
+                                <button class="cs-button cs-button--primary" id="order_subject_to_charge" type="button">
+                                    Order Subject to Charge
+                                </button>
+                            </div>
+                        </div>
+                    </main>
+                    </body>'''
             elif "next-step" in url:
                 # Phase 3 - Participant selection (based on 3.html analysis)
                 self.text = '''<body class="cs-checkout-page">
@@ -483,6 +574,25 @@ except ImportError:
                             <div class="cs-order-actions">
                                 <button class="cs-button cs-button--primary" id="order_subject_to_charge" type="button">
                                     Order Subject to Charge
+                                </button>
+                            </div>
+                        </div>
+                    </main>
+                    </body>'''
+            elif "complete" in url or "success" in url:
+                # Phase 6 - Booking Completion/Success page
+                self.text = '''<body class="cs-checkout-page">
+                    <main class="cs-checkout">
+                        <div class="cs-success-section">
+                            <h2>🎉 Booking Successful!</h2>
+                            <div class="cs-success-details">
+                                <p>Your Goethe-Zertifikat B2 exam has been successfully booked.</p>
+                                <p>Modules: Reading, Listening</p>
+                                <p>Confirmation Number: GOE-2025-001</p>
+                            </div>
+                            <div class="cs-success-actions">
+                                <button class="cs-button cs-button--primary" id="download_confirmation" type="button">
+                                    Download Confirmation
                                 </button>
                             </div>
                         </div>
