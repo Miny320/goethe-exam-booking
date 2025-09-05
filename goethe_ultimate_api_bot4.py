@@ -218,7 +218,7 @@ except ImportError:
                                 </div>
                             </div>
                         </main>
-                        <script>
+                        <script type="text/javascript">
                             window.orderButtonLink = 'https://www.goethe.de/checkout/complete?session=mock';
                             Wicket.Ajax.ajax({
                                 "u": "orderButtonLink",
@@ -283,7 +283,7 @@ except ImportError:
                                 </div>
                             </div>
                         </main>
-                        <script>
+                        <script type="text/javascript">
                             window.orderButtonLink = 'https://www.goethe.de/checkout/complete?session=mock';
                             Wicket.Ajax.ajax({
                                 "u": "orderButtonLink",
@@ -457,7 +457,7 @@ except ImportError:
                             </div>
                         </div>
                     </main>
-                    <script>
+                    <script type="text/javascript">
                         window.orderButtonLink = 'https://www.goethe.de/checkout/complete?session=mock';
                         Wicket.Ajax.ajax({
                             "u": "orderButtonLink",
@@ -586,7 +586,7 @@ except ImportError:
                             </div>
                         </div>
                     </main>
-                    <script>
+                    <script type="text/javascript">
                         window.orderButtonLink = 'https://www.goethe.de/checkout/complete?session=mock';
                         Wicket.Ajax.ajax({
                             "u": "orderButtonLink",
