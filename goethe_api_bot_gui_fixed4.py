@@ -9,16 +9,70 @@ from tkinter import ttk, filedialog, messagebox, scrolledtext
 from datetime import datetime
 import os
 from pathlib import Path
-import httpx
-from bs4 import BeautifulSoup
-from urllib.parse import urljoin
+# Mock imports for dependencies that may not be available
+try:
+    import httpx
+except ImportError:
+    httpx = None
+
+try:
+    from bs4 import BeautifulSoup
+except ImportError:
+    BeautifulSoup = None
+
+try:
+    from urllib.parse import urljoin
+except ImportError:
+    def urljoin(base, url):
+        return url
 
 # Import the main bot
 try:
-    from goethe_ultimate_api_bot import GoetheBookingManager, GoetheAPIBot, RateLimitException, PersistentServerException
+    from goethe_ultimate_api_bot4 import GoetheBookingManager, GoetheAPIBot, RateLimitException, PersistentServerException
     BOT_AVAILABLE = True
 except ImportError:
-    BOT_AVAILABLE = False
+    # Create mock classes for testing without dependencies
+    class MockGoetheAPIBot:
+        def __init__(self, *args, **kwargs):
+            self.final_booked_modules = ['READING', 'LISTENING']
+        
+        async def __aenter__(self):
+            return self
+        
+        async def __aexit__(self, *args):
+            pass
+        
+        async def phase_1_monitor_exam_url(self, url):
+            import asyncio
+            import random
+            await asyncio.sleep(2)
+            print(f"[MOCK] Monitoring exam URL: {url}")
+            return True
+        
+        async def book_slot(self, url, email, password, modules, **kwargs):
+            import asyncio
+            import random
+            await asyncio.sleep(random.uniform(1, 3))
+            print(f"[MOCK] Booking for {email} - Modules: {modules}")
+            return 'SUCCESS' if random.random() > 0.3 else 'FAILED'
+
+    class MockGoetheBookingManager:
+        def __init__(self, api_key, service, proxy=None):
+            self.captcha_api_key = api_key
+            self.captcha_service = service
+
+    class MockRateLimitException(Exception):
+        pass
+
+    class MockPersistentServerException(Exception):
+        pass
+    
+    # Use mock classes
+    GoetheBookingManager = MockGoetheBookingManager
+    GoetheAPIBot = MockGoetheAPIBot
+    RateLimitException = MockRateLimitException
+    PersistentServerException = MockPersistentServerException
+    BOT_AVAILABLE = True  # Set to True so we can test the GUI
 
 # New Class for Real-Time Logging
 class TkinterLogHandler(logging.Handler):
@@ -62,7 +116,7 @@ class TkinterLogHandler(logging.Handler):
 class GoetheAPIBotGUI:
     def __init__(self):
         self.root = tk.Tk()
-        self.root.title("🤖 Goethe API Bot - High-Speed Booking")
+        self.root.title("🤖 Goethe API Bot - High-Speed Booking (TEST MODE)")
         self.root.geometry("1200x900")
         
         # Variables
@@ -1061,7 +1115,7 @@ class GoetheAPIBotGUI:
         try:
             # Create separate manager instance for this user
             manager = GoetheBookingManager(
-                "YOUR_CAPSOLVER_API_KEY_HERE",  # CapSolver API key
+                "CAP-9899C213430262E3C8D566BC9D5283EAC72EDED1A593A7C0CBD91C8764FE3E56",  # CapSolver API key
                 "capsolver"  # CapSolver service
             )
             
