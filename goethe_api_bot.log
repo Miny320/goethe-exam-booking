@@ -3497,3 +3497,316 @@
 2025-09-05 16:40:40,806 - INFO - ❌ [3] abhinavyaks@gmail.com: Booking failed with status: FAILED
 2025-09-05 16:40:40,811 - INFO - 📊 Final Tally: 0 out of 3 bookings were successful.
 2025-09-05 16:40:40,831 - INFO - 🛑 Booking stopped by user
+2025-09-05 16:46:33,557 - INFO - GUI Initialized. Real-time logging is active.
+2025-09-05 16:47:05,932 - INFO - GUI Initialized. Real-time logging is active.
+2025-09-05 16:47:22,717 - INFO - Selected CSV file: E:/My projects/Scraping/goethe booking/acc.csv
+2025-09-05 16:47:23,323 - INFO - CSV preview loaded: 3 users found.
+2025-09-05 16:47:25,723 - INFO - ℹ️ Proxies are disabled by user.
+2025-09-05 16:47:25,739 - INFO - ℹ️ Proxies are disabled by user.
+2025-09-05 16:47:25,746 - INFO - 🤖 Proxy Pool: Proxies disabled. All tasks will use the server IP.
+2025-09-05 16:47:25,747 - INFO - 🎯 Target URL: https://www.goethe.de/ins/in/en/spr/prf/gzb2.cfm?examId=0A0DC2D884DFFC8FD8DD5E9077CF51527BD48A2BEC95AAE509AF0EF887919AF9DF9BEBC88C1E294A8EEFFD8301DE498DEEF38F9653D152C9A57A8417C883CABA
+2025-09-05 16:47:25,754 - INFO - 👥 Found 3 candidates.
+2025-09-05 16:47:25,799 - INFO - Creating a dedicated monitor bot (using server IP)...
+2025-09-05 16:47:25,824 - INFO - [PROXY] Bot instance running without a proxy (using server IP).
+2025-09-05 16:47:25,830 - INFO - [INIT] Bot initialized with User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb...
+2025-09-05 16:47:25,834 - INFO - [INIT] SSL context configured with secure ciphers
+2025-09-05 16:47:25,840 - INFO - [INIT] Connection limits: 20 max, 10 keepalive
+2025-09-05 16:47:25,844 - INFO - [INIT] Anti-bot settings: delay 0.5-2.0s, max retries 3
+2025-09-05 16:47:25,849 - INFO - >>> Phase 1: Monitor exam URL for SELECT MODULES button
+2025-09-05 16:47:25,853 - INFO - [MONITOR] Starting to monitor: https://www.goethe.de/ins/in/en/spr/prf/gzb2.cfm?examId=0A0DC2D884DFFC8FD8DD5E9077CF51527BD48A2BEC95AAE509AF0EF887919AF9DF9BEBC88C1E294A8EEFFD8301DE498DEEF38F9653D152C9A57A8417C883CABA
+2025-09-05 16:47:25,856 - INFO - 🔍 [SESSION CHECK] Verifying session continuity at Phase 1...
+2025-09-05 16:47:25,875 - INFO - 🍪 [COOKIES] Current cookie count: 0
+2025-09-05 16:47:25,880 - INFO - ℹ️ [SESSION] No cookies found - this may be expected
+2025-09-05 16:47:25,886 - INFO - ℹ️ [SESSION] This is expected for initial request
+2025-09-05 16:47:26,702 - INFO - [SLOT-DETECTED] Exam button link found after 0.8s (1 checks)!
+2025-09-05 16:47:26,703 - INFO - [URL-FOUND] Booking URL: https://www.goethe.de/coe?lang=en&oid=7482ca79729c948ee2ef6a560b9b1ba5ca547924c10d7929081e4d472d715d3e
+2025-09-05 16:47:26,707 - INFO - ✅ SLOT FOUND! Starting parallel booking attempts...
+2025-09-05 16:47:26,724 - INFO - 🚀 Executing 3 bookings in parallel...
+2025-09-05 16:47:26,727 - INFO - -> [1] dianapious1998@gmail.com: Attempt 1 using IP: Main Server IP
+2025-09-05 16:47:26,755 - INFO - [1] dianapious1998@gmail.com - [PROXY] Bot instance running without a proxy (using server IP).
+2025-09-05 16:47:26,756 - INFO - [1] dianapious1998@gmail.com - [INIT] Bot initialized with User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:115.0) ...
+2025-09-05 16:47:26,763 - INFO - [1] dianapious1998@gmail.com - [INIT] SSL context configured with secure ciphers
+2025-09-05 16:47:26,773 - INFO - [1] dianapious1998@gmail.com - [INIT] Connection limits: 20 max, 10 keepalive
+2025-09-05 16:47:26,780 - INFO - [1] dianapious1998@gmail.com - [INIT] Anti-bot settings: delay 0.5-2.0s, max retries 3
+2025-09-05 16:47:26,786 - INFO - [1] dianapious1998@gmail.com - [ANTI-BOT] Settings adjusted to moderate: delay 0.5-2.0s, retries 3
+2025-09-05 16:47:26,791 - INFO - [1] dianapious1998@gmail.com - [BOOKING] Starting booking process with moderate anti-bot protection
+2025-09-05 16:47:26,799 - INFO - [1] dianapious1998@gmail.com - >>> Phase 1: Monitor exam URL for SELECT MODULES button
+2025-09-05 16:47:26,808 - INFO - [1] dianapious1998@gmail.com - [MONITOR] Starting to monitor: https://www.goethe.de/ins/in/en/spr/prf/gzb2.cfm?examId=0A0DC2D884DFFC8FD8DD5E9077CF51527BD48A2BEC95AAE509AF0EF887919AF9DF9BEBC88C1E294A8EEFFD8301DE498DEEF38F9653D152C9A57A8417C883CABA
+2025-09-05 16:47:26,815 - INFO - [1] dianapious1998@gmail.com - 🔍 [SESSION CHECK] Verifying session continuity at Phase 1...
+2025-09-05 16:47:26,837 - INFO - [1] dianapious1998@gmail.com - 🍪 [COOKIES] Current cookie count: 0
+2025-09-05 16:47:26,845 - INFO - ℹ️ [SESSION] No cookies found - this may be expected
+2025-09-05 16:47:26,851 - INFO - [1] dianapious1998@gmail.com - ℹ️ [SESSION] This is expected for initial request
+2025-09-05 16:47:26,855 - INFO - -> [2] miniponnappan007@gmail.com: Attempt 1 using IP: Main Server IP
+2025-09-05 16:47:26,898 - INFO - [2] miniponnappan007@gmail.com - [PROXY] Bot instance running without a proxy (using server IP).
+2025-09-05 16:47:26,902 - INFO - [2] miniponnappan007@gmail.com - [INIT] Bot initialized with User-Agent: Mozilla/5.0 (Linux; Android 13; SM-S918B) AppleWeb...
+2025-09-05 16:47:26,934 - INFO - [2] miniponnappan007@gmail.com - [INIT] SSL context configured with secure ciphers
+2025-09-05 16:47:26,944 - INFO - [2] miniponnappan007@gmail.com - [INIT] Connection limits: 20 max, 10 keepalive
+2025-09-05 16:47:26,950 - INFO - [2] miniponnappan007@gmail.com - [INIT] Anti-bot settings: delay 0.5-2.0s, max retries 3
+2025-09-05 16:47:26,958 - INFO - [2] miniponnappan007@gmail.com - [ANTI-BOT] Settings adjusted to moderate: delay 0.5-2.0s, retries 3
+2025-09-05 16:47:26,967 - INFO - [2] miniponnappan007@gmail.com - [BOOKING] Starting booking process with moderate anti-bot protection
+2025-09-05 16:47:26,980 - INFO - [2] miniponnappan007@gmail.com - >>> Phase 1: Monitor exam URL for SELECT MODULES button
+2025-09-05 16:47:26,992 - INFO - [2] miniponnappan007@gmail.com - [MONITOR] Starting to monitor: https://www.goethe.de/ins/in/en/spr/prf/gzb2.cfm?examId=0A0DC2D884DFFC8FD8DD5E9077CF51527BD48A2BEC95AAE509AF0EF887919AF9DF9BEBC88C1E294A8EEFFD8301DE498DEEF38F9653D152C9A57A8417C883CABA
+2025-09-05 16:47:26,999 - INFO - [2] miniponnappan007@gmail.com - 🔍 [SESSION CHECK] Verifying session continuity at Phase 1...
+2025-09-05 16:47:27,029 - INFO - [2] miniponnappan007@gmail.com - 🍪 [COOKIES] Current cookie count: 0
+2025-09-05 16:47:27,035 - INFO - ℹ️ [SESSION] No cookies found - this may be expected
+2025-09-05 16:47:27,044 - INFO - [2] miniponnappan007@gmail.com - ℹ️ [SESSION] This is expected for initial request
+2025-09-05 16:47:27,048 - INFO - -> [3] abhinavyaks@gmail.com: Attempt 1 using IP: Main Server IP
+2025-09-05 16:47:27,081 - INFO - [3] abhinavyaks@gmail.com - [PROXY] Bot instance running without a proxy (using server IP).
+2025-09-05 16:47:27,082 - INFO - [3] abhinavyaks@gmail.com - [INIT] Bot initialized with User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:142.0...
+2025-09-05 16:47:27,088 - INFO - [3] abhinavyaks@gmail.com - [INIT] SSL context configured with secure ciphers
+2025-09-05 16:47:27,096 - INFO - [3] abhinavyaks@gmail.com - [INIT] Connection limits: 20 max, 10 keepalive
+2025-09-05 16:47:27,102 - INFO - [3] abhinavyaks@gmail.com - [INIT] Anti-bot settings: delay 0.5-2.0s, max retries 3
+2025-09-05 16:47:27,110 - INFO - [3] abhinavyaks@gmail.com - [ANTI-BOT] Settings adjusted to moderate: delay 0.5-2.0s, retries 3
+2025-09-05 16:47:27,120 - INFO - [3] abhinavyaks@gmail.com - [BOOKING] Starting booking process with moderate anti-bot protection
+2025-09-05 16:47:27,127 - INFO - [3] abhinavyaks@gmail.com - >>> Phase 1: Monitor exam URL for SELECT MODULES button
+2025-09-05 16:47:27,134 - INFO - [3] abhinavyaks@gmail.com - [MONITOR] Starting to monitor: https://www.goethe.de/ins/in/en/spr/prf/gzb2.cfm?examId=0A0DC2D884DFFC8FD8DD5E9077CF51527BD48A2BEC95AAE509AF0EF887919AF9DF9BEBC88C1E294A8EEFFD8301DE498DEEF38F9653D152C9A57A8417C883CABA
+2025-09-05 16:47:27,141 - INFO - [3] abhinavyaks@gmail.com - 🔍 [SESSION CHECK] Verifying session continuity at Phase 1...
+2025-09-05 16:47:27,159 - INFO - [3] abhinavyaks@gmail.com - 🍪 [COOKIES] Current cookie count: 0
+2025-09-05 16:47:27,166 - INFO - ℹ️ [SESSION] No cookies found - this may be expected
+2025-09-05 16:47:27,171 - INFO - [3] abhinavyaks@gmail.com - ℹ️ [SESSION] This is expected for initial request
+2025-09-05 16:47:27,735 - INFO - [SLOT-DETECTED] Exam button link found after 0.6s (1 checks)!
+2025-09-05 16:47:27,736 - INFO - [URL-FOUND] Booking URL: https://www.goethe.de/coe?lang=en&oid=7482ca79729c948ee2ef6a560b9b1ba5ca547924c10d7929081e4d472d715d3e
+2025-09-05 16:47:27,742 - INFO - [3] abhinavyaks@gmail.com - [NAVIGATE] Slot found. Now navigating to the module selection page...
+2025-09-05 16:47:27,755 - INFO - [3] abhinavyaks@gmail.com - [URL-FOUND] Using exam button link: https://www.goethe.de/coe?lang=en&oid=7482ca79729c948ee2ef6a560b9b1ba5ca547924c10d7929081e4d472d715d3e
+2025-09-05 16:47:27,762 - INFO - [3] abhinavyaks@gmail.com - [NAVIGATE] Following link to: https://www.goethe.de/coe?lang=en&oid=7482ca79729c948ee2ef6a560b9b1ba5ca547924c10d7929081e4d472d715d3e
+2025-09-05 16:47:28,169 - INFO - [SLOT-DETECTED] Exam button link found after 1.3s (1 checks)!
+2025-09-05 16:47:28,172 - INFO - [URL-FOUND] Booking URL: https://www.goethe.de/coe?lang=en&oid=7482ca79729c948ee2ef6a560b9b1ba5ca547924c10d7929081e4d472d715d3e
+2025-09-05 16:47:28,177 - INFO - [1] dianapious1998@gmail.com - [NAVIGATE] Slot found. Now navigating to the module selection page...
+2025-09-05 16:47:28,186 - INFO - [1] dianapious1998@gmail.com - [URL-FOUND] Using exam button link: https://www.goethe.de/coe?lang=en&oid=7482ca79729c948ee2ef6a560b9b1ba5ca547924c10d7929081e4d472d715d3e
+2025-09-05 16:47:28,193 - INFO - [1] dianapious1998@gmail.com - [NAVIGATE] Following link to: https://www.goethe.de/coe?lang=en&oid=7482ca79729c948ee2ef6a560b9b1ba5ca547924c10d7929081e4d472d715d3e
+2025-09-05 16:47:28,370 - INFO - [SLOT-DETECTED] Exam button link found after 1.3s (1 checks)!
+2025-09-05 16:47:28,372 - INFO - [URL-FOUND] Booking URL: https://www.goethe.de/coe?lang=en&oid=7482ca79729c948ee2ef6a560b9b1ba5ca547924c10d7929081e4d472d715d3e
+2025-09-05 16:47:28,388 - INFO - [2] miniponnappan007@gmail.com - [NAVIGATE] Slot found. Now navigating to the module selection page...
+2025-09-05 16:47:28,400 - INFO - [2] miniponnappan007@gmail.com - [URL-FOUND] Using exam button link: https://www.goethe.de/coe?lang=en&oid=7482ca79729c948ee2ef6a560b9b1ba5ca547924c10d7929081e4d472d715d3e
+2025-09-05 16:47:28,409 - INFO - [2] miniponnappan007@gmail.com - [NAVIGATE] Following link to: https://www.goethe.de/coe?lang=en&oid=7482ca79729c948ee2ef6a560b9b1ba5ca547924c10d7929081e4d472d715d3e
+2025-09-05 16:47:28,773 - INFO - [1] dianapious1998@gmail.com - >>> Phase 2: Module Selection and Booking Initiation
+2025-09-05 16:47:28,774 - INFO - [1] dianapious1998@gmail.com - 🔍 [SESSION CHECK] Verifying session continuity at Phase 2...
+2025-09-05 16:47:28,779 - INFO - [1] dianapious1998@gmail.com - 🍪 [COOKIES] Current cookie count: 0
+2025-09-05 16:47:28,787 - INFO - ℹ️ [SESSION] No cookies found - this may be expected
+2025-09-05 16:47:28,792 - INFO - [1] dianapious1998@gmail.com - [MODULES] Successfully loaded module page: https://www.goethe.de/coe?lang=en&oid=7482ca79729c948ee2ef6a560b9b1ba5ca547924c10d7929081e4d472d715d3e
+2025-09-05 16:47:28,796 - INFO - [1] dianapious1998@gmail.com - [MODULES] Setting up module selection...
+2025-09-05 16:47:28,810 - INFO - [1] dianapious1998@gmail.com - [MODULE-CHECK] Available on page: ['READING', 'WRITING', 'LISTENING']
+2025-09-05 16:47:28,815 - INFO - [1] dianapious1998@gmail.com - [MODULE-CHECK] Desired by user: ['READING', 'LISTENING']
+2025-09-05 16:47:28,823 - INFO - [1] dianapious1998@gmail.com - [MODULE-CONTINUE] At least one desired module found. Attempting to book: ['READING', 'LISTENING']
+2025-09-05 16:47:28,830 - WARNING - [1] dianapious1998@gmail.com - [WARN] No AJAX URL found for 'writing', cannot toggle.
+2025-09-05 16:47:28,839 - INFO - [1] dianapious1998@gmail.com - ✅ [MODULES] All modules are in the correct state.
+2025-09-05 16:47:28,844 - INFO - [1] dianapious1998@gmail.com - [STATE SAVE] Final booked modules set to: ['LISTENING', 'READING']
+2025-09-05 16:47:28,851 - INFO - [1] dianapious1998@gmail.com - [MODULES] ✅ Module selection completed and page state is updated.
+2025-09-05 16:47:28,857 - INFO - [1] dianapious1998@gmail.com - [CONTINUE] Extracting and calling 'continue' link from module page...
+2025-09-05 16:47:28,867 - WARNING - [AJAX-EXTRACT] No navSection-nextLink found on options page
+2025-09-05 16:47:28,873 - INFO - [FALLBACK] Looking for cs-button--arrow_next elements...
+2025-09-05 16:47:28,877 - INFO - [FALLBACK] Using second continue button with ID: BloxGcSJbAwtjXRvkJyk
+2025-09-05 16:47:28,883 - INFO - [1] dianapious1998@gmail.com - [SUCCESS] Navigated to participant selection page: https://www.goethe.de/checkout/next-step
+2025-09-05 16:47:28,888 - INFO - [1] dianapious1998@gmail.com - [BOOK] Searching for 'BOOK FOR MYSELF' button...
+2025-09-05 16:47:28,897 - INFO - [DEBUG] Page saved to: logs\debug_participant_selection_page_20250905_164728.html
+2025-09-05 16:47:28,902 - WARNING - [1] dianapious1998@gmail.com - [FALLBACK] No AJAX URL found, looking for 'Book for myself' button...
+2025-09-05 16:47:28,908 - INFO - [1] dianapious1998@gmail.com - [MOCK-SUCCESS] Found 'Book for myself' button with ID: id13
+2025-09-05 16:47:28,916 - INFO - [1] dianapious1998@gmail.com - [MOCK] Using simulated login URL: https://login.goethe.de/cas/login?service=https://www.goethe.de/coe/cas?mock=participant
+2025-09-05 16:47:28,922 - INFO - [1] dianapious1998@gmail.com - 📍 [REQUEST] Making regular GET request to: https://login.goethe.de/cas/login?service=https://www.goethe.de/coe/cas?mock=participant
+2025-09-05 16:47:28,932 - INFO - [1] dianapious1998@gmail.com - 📥 [RESPONSE] Status: 200
+2025-09-05 16:47:28,944 - INFO - [1] dianapious1998@gmail.com - 🎭 [MOCK] Received 200 response from mock login URL - treating as login page
+2025-09-05 16:47:28,950 - INFO - [1] dianapious1998@gmail.com - 📌 [MOCK-SERVICE] Captured service URL: https://www.goethe.de/coe/cas?mock=participant
+2025-09-05 16:47:28,956 - INFO - >>> Phase 3: Login When Required
+2025-09-05 16:47:28,965 - INFO - 🔐 [LOGIN] Following captured redirect to: https://login.goethe.de/cas/login?service=https://www.goethe.de/coe/cas?mock=participant
+2025-09-05 16:47:28,968 - INFO - ✅ [SUCCESS] Reached CAS login page via captured redirect
+2025-09-05 16:47:28,978 - INFO - [LOGIN] Checking for login requirement from URL: https://login.goethe.de/cas/login?service=https://www.goethe.de/coe/cas?mock=participant
+2025-09-05 16:47:28,982 - INFO - [LOGIN] Login indicators found - forcing login handling
+2025-09-05 16:47:28,993 - INFO - 📋 [FORM] Found embedded login form with action: https://login.goethe.de/cas/login
+2025-09-05 16:47:28,997 - INFO - 📤 [LOGIN] Submitting embedded login form to: https://login.goethe.de/cas/login
+2025-09-05 16:47:29,033 - INFO - [3] abhinavyaks@gmail.com - >>> Phase 2: Module Selection and Booking Initiation
+2025-09-05 16:47:29,034 - INFO - [3] abhinavyaks@gmail.com - 🔍 [SESSION CHECK] Verifying session continuity at Phase 2...
+2025-09-05 16:47:29,039 - INFO - [3] abhinavyaks@gmail.com - 🍪 [COOKIES] Current cookie count: 0
+2025-09-05 16:47:29,045 - INFO - ℹ️ [SESSION] No cookies found - this may be expected
+2025-09-05 16:47:29,050 - INFO - [3] abhinavyaks@gmail.com - [MODULES] Successfully loaded module page: https://www.goethe.de/coe?lang=en&oid=7482ca79729c948ee2ef6a560b9b1ba5ca547924c10d7929081e4d472d715d3e
+2025-09-05 16:47:29,054 - INFO - [3] abhinavyaks@gmail.com - [MODULES] Setting up module selection...
+2025-09-05 16:47:29,068 - INFO - [3] abhinavyaks@gmail.com - [MODULE-CHECK] Available on page: ['READING', 'WRITING', 'LISTENING']
+2025-09-05 16:47:29,072 - INFO - [3] abhinavyaks@gmail.com - [MODULE-CHECK] Desired by user: ['READING']
+2025-09-05 16:47:29,079 - INFO - [3] abhinavyaks@gmail.com - [MODULE-CONTINUE] At least one desired module found. Attempting to book: ['READING']
+2025-09-05 16:47:29,086 - WARNING - [3] abhinavyaks@gmail.com - [WARN] No AJAX URL found for 'listening', cannot toggle.
+2025-09-05 16:47:29,093 - WARNING - [3] abhinavyaks@gmail.com - [WARN] No AJAX URL found for 'writing', cannot toggle.
+2025-09-05 16:47:29,099 - INFO - [3] abhinavyaks@gmail.com - ✅ [MODULES] All modules are in the correct state.
+2025-09-05 16:47:29,104 - INFO - [3] abhinavyaks@gmail.com - [STATE SAVE] Final booked modules set to: ['READING']
+2025-09-05 16:47:29,110 - INFO - [3] abhinavyaks@gmail.com - [MODULES] ✅ Module selection completed and page state is updated.
+2025-09-05 16:47:29,116 - INFO - [3] abhinavyaks@gmail.com - [CONTINUE] Extracting and calling 'continue' link from module page...
+2025-09-05 16:47:29,123 - WARNING - [AJAX-EXTRACT] No navSection-nextLink found on options page
+2025-09-05 16:47:29,130 - INFO - [FALLBACK] Looking for cs-button--arrow_next elements...
+2025-09-05 16:47:29,135 - INFO - [FALLBACK] Using second continue button with ID: BloxGcSJbAwtjXRvkJyk
+2025-09-05 16:47:29,139 - INFO - [3] abhinavyaks@gmail.com - [SUCCESS] Navigated to participant selection page: https://www.goethe.de/checkout/next-step
+2025-09-05 16:47:29,144 - INFO - [3] abhinavyaks@gmail.com - [BOOK] Searching for 'BOOK FOR MYSELF' button...
+2025-09-05 16:47:29,153 - INFO - [DEBUG] Page saved to: logs\debug_participant_selection_page_20250905_164729.html
+2025-09-05 16:47:29,158 - WARNING - [3] abhinavyaks@gmail.com - [FALLBACK] No AJAX URL found, looking for 'Book for myself' button...
+2025-09-05 16:47:29,164 - INFO - [3] abhinavyaks@gmail.com - [MOCK-SUCCESS] Found 'Book for myself' button with ID: id13
+2025-09-05 16:47:29,171 - INFO - [3] abhinavyaks@gmail.com - [MOCK] Using simulated login URL: https://login.goethe.de/cas/login?service=https://www.goethe.de/coe/cas?mock=participant
+2025-09-05 16:47:29,178 - INFO - [3] abhinavyaks@gmail.com - 📍 [REQUEST] Making regular GET request to: https://login.goethe.de/cas/login?service=https://www.goethe.de/coe/cas?mock=participant
+2025-09-05 16:47:29,188 - INFO - [3] abhinavyaks@gmail.com - 📥 [RESPONSE] Status: 200
+2025-09-05 16:47:29,198 - INFO - [3] abhinavyaks@gmail.com - 🎭 [MOCK] Received 200 response from mock login URL - treating as login page
+2025-09-05 16:47:29,204 - INFO - [3] abhinavyaks@gmail.com - 📌 [MOCK-SERVICE] Captured service URL: https://www.goethe.de/coe/cas?mock=participant
+2025-09-05 16:47:29,210 - INFO - >>> Phase 3: Login When Required
+2025-09-05 16:47:29,218 - INFO - 🔐 [LOGIN] Following captured redirect to: https://login.goethe.de/cas/login?service=https://www.goethe.de/coe/cas?mock=participant
+2025-09-05 16:47:29,221 - INFO - ✅ [SUCCESS] Reached CAS login page via captured redirect
+2025-09-05 16:47:29,230 - INFO - [LOGIN] Checking for login requirement from URL: https://login.goethe.de/cas/login?service=https://www.goethe.de/coe/cas?mock=participant
+2025-09-05 16:47:29,235 - INFO - [LOGIN] Login indicators found - forcing login handling
+2025-09-05 16:47:29,245 - INFO - 📋 [FORM] Found embedded login form with action: https://login.goethe.de/cas/login
+2025-09-05 16:47:29,249 - INFO - 📤 [LOGIN] Submitting embedded login form to: https://login.goethe.de/cas/login
+2025-09-05 16:47:29,726 - INFO - [2] miniponnappan007@gmail.com - >>> Phase 2: Module Selection and Booking Initiation
+2025-09-05 16:47:29,728 - INFO - [2] miniponnappan007@gmail.com - 🔍 [SESSION CHECK] Verifying session continuity at Phase 2...
+2025-09-05 16:47:29,735 - INFO - [2] miniponnappan007@gmail.com - 🍪 [COOKIES] Current cookie count: 0
+2025-09-05 16:47:29,742 - INFO - ℹ️ [SESSION] No cookies found - this may be expected
+2025-09-05 16:47:29,747 - INFO - [2] miniponnappan007@gmail.com - [MODULES] Successfully loaded module page: https://www.goethe.de/coe?lang=en&oid=7482ca79729c948ee2ef6a560b9b1ba5ca547924c10d7929081e4d472d715d3e
+2025-09-05 16:47:29,750 - INFO - [2] miniponnappan007@gmail.com - [MODULES] Setting up module selection...
+2025-09-05 16:47:29,765 - INFO - [2] miniponnappan007@gmail.com - [MODULE-CHECK] Available on page: ['READING', 'WRITING', 'LISTENING']
+2025-09-05 16:47:29,771 - INFO - [2] miniponnappan007@gmail.com - [MODULE-CHECK] Desired by user: ['READING', 'LISTENING']
+2025-09-05 16:47:29,778 - INFO - [2] miniponnappan007@gmail.com - [MODULE-CONTINUE] At least one desired module found. Attempting to book: ['READING', 'LISTENING']
+2025-09-05 16:47:29,785 - WARNING - [2] miniponnappan007@gmail.com - [WARN] No AJAX URL found for 'writing', cannot toggle.
+2025-09-05 16:47:29,795 - INFO - [2] miniponnappan007@gmail.com - ✅ [MODULES] All modules are in the correct state.
+2025-09-05 16:47:29,800 - INFO - [2] miniponnappan007@gmail.com - [STATE SAVE] Final booked modules set to: ['LISTENING', 'READING']
+2025-09-05 16:47:29,807 - INFO - [2] miniponnappan007@gmail.com - [MODULES] ✅ Module selection completed and page state is updated.
+2025-09-05 16:47:29,814 - INFO - [2] miniponnappan007@gmail.com - [CONTINUE] Extracting and calling 'continue' link from module page...
+2025-09-05 16:47:29,822 - WARNING - [AJAX-EXTRACT] No navSection-nextLink found on options page
+2025-09-05 16:47:29,829 - INFO - [FALLBACK] Looking for cs-button--arrow_next elements...
+2025-09-05 16:47:29,835 - INFO - [FALLBACK] Using second continue button with ID: BloxGcSJbAwtjXRvkJyk
+2025-09-05 16:47:29,839 - INFO - [2] miniponnappan007@gmail.com - [SUCCESS] Navigated to participant selection page: https://www.goethe.de/checkout/next-step
+2025-09-05 16:47:29,844 - INFO - [2] miniponnappan007@gmail.com - [BOOK] Searching for 'BOOK FOR MYSELF' button...
+2025-09-05 16:47:29,854 - INFO - [DEBUG] Page saved to: logs\debug_participant_selection_page_20250905_164729.html
+2025-09-05 16:47:29,859 - WARNING - [2] miniponnappan007@gmail.com - [FALLBACK] No AJAX URL found, looking for 'Book for myself' button...
+2025-09-05 16:47:29,865 - INFO - [2] miniponnappan007@gmail.com - [MOCK-SUCCESS] Found 'Book for myself' button with ID: id13
+2025-09-05 16:47:29,872 - INFO - [2] miniponnappan007@gmail.com - [MOCK] Using simulated login URL: https://login.goethe.de/cas/login?service=https://www.goethe.de/coe/cas?mock=participant
+2025-09-05 16:47:29,878 - INFO - [2] miniponnappan007@gmail.com - 📍 [REQUEST] Making regular GET request to: https://login.goethe.de/cas/login?service=https://www.goethe.de/coe/cas?mock=participant
+2025-09-05 16:47:29,889 - INFO - [2] miniponnappan007@gmail.com - 📥 [RESPONSE] Status: 200
+2025-09-05 16:47:29,902 - INFO - [2] miniponnappan007@gmail.com - 🎭 [MOCK] Received 200 response from mock login URL - treating as login page
+2025-09-05 16:47:29,906 - INFO - [2] miniponnappan007@gmail.com - 📌 [MOCK-SERVICE] Captured service URL: https://www.goethe.de/coe/cas?mock=participant
+2025-09-05 16:47:29,914 - INFO - >>> Phase 3: Login When Required
+2025-09-05 16:47:29,922 - INFO - 🔐 [LOGIN] Following captured redirect to: https://login.goethe.de/cas/login?service=https://www.goethe.de/coe/cas?mock=participant
+2025-09-05 16:47:29,925 - INFO - ✅ [SUCCESS] Reached CAS login page via captured redirect
+2025-09-05 16:47:29,934 - INFO - [LOGIN] Checking for login requirement from URL: https://login.goethe.de/cas/login?service=https://www.goethe.de/coe/cas?mock=participant
+2025-09-05 16:47:29,939 - INFO - [LOGIN] Login indicators found - forcing login handling
+2025-09-05 16:47:29,949 - INFO - 📋 [FORM] Found embedded login form with action: https://login.goethe.de/cas/login
+2025-09-05 16:47:29,953 - INFO - 📤 [LOGIN] Submitting embedded login form to: https://login.goethe.de/cas/login
+2025-09-05 16:47:30,068 - INFO - ✅ [LOGIN] Login form submission successful: 200
+2025-09-05 16:47:30,070 - INFO - >>> Phase 3.4: Handle OSKA-ACC Page (if present)
+2025-09-05 16:47:30,074 - INFO - [SKIP] No OSKA-ACC page detected, proceeding to voucher page
+2025-09-05 16:47:30,078 - INFO - >>> Phase 3.5: Handle Voucher/Payment Page
+2025-09-05 16:47:30,083 - INFO - [VOUCHER] On voucher page: https://www.goethe.de/checkout/voucher?session=mock
+2025-09-05 16:47:30,087 - INFO - [DEBUG] Page saved to: logs\debug_voucher_page_20250905_164730.html
+2025-09-05 16:47:30,092 - INFO - [CONTINUE] Searching for continue button on voucher page...
+2025-09-05 16:47:30,099 - INFO - [CONTINUE] Extracting navSection-nextLink from voucher page...
+2025-09-05 16:47:30,104 - WARNING - [AJAX-EXTRACT] No navSection-nextLink found on voucher page
+2025-09-05 16:47:30,109 - INFO - [FALLBACK] Looking for cs-button--arrow_next elements...
+2025-09-05 16:47:30,114 - INFO - [FALLBACK] Using first continue button with ID: payment_continue
+2025-09-05 16:47:30,118 - INFO - [SUCCESS] Navigated from voucher to: https://www.goethe.de/checkout/next-step
+2025-09-05 16:47:30,123 - INFO - [SUCCESS] Continued from voucher page to: https://www.goethe.de/checkout/next-step
+2025-09-05 16:47:30,128 - INFO - >>> Phase 4: Handle PSP Selection Page
+2025-09-05 16:47:30,135 - INFO - [PSP-START] Performing aggressive TGC cookie cleanup
+2025-09-05 16:47:30,138 - INFO - [TGC-VERIFY PSP-START] Current jar state: 0 TGC cookies
+2025-09-05 16:47:30,142 - WARNING - [WARNING] Expected PSP selection page, got: https://www.goethe.de/checkout/next-step
+2025-09-05 16:47:30,147 - INFO - [NAVIGATE] Derived PSP URL: https://www.goethe.de/coe/checkout/next-step
+2025-09-05 16:47:30,152 - INFO - [TGC-VERIFY PRE-PSP-NAV] Current jar state: 0 TGC cookies
+2025-09-05 16:47:30,595 - INFO - ✅ [LOGIN] Login form submission successful: 200
+2025-09-05 16:47:30,597 - INFO - >>> Phase 3.4: Handle OSKA-ACC Page (if present)
+2025-09-05 16:47:30,600 - INFO - [SKIP] No OSKA-ACC page detected, proceeding to voucher page
+2025-09-05 16:47:30,604 - INFO - >>> Phase 3.5: Handle Voucher/Payment Page
+2025-09-05 16:47:30,609 - INFO - [VOUCHER] On voucher page: https://www.goethe.de/checkout/voucher?session=mock
+2025-09-05 16:47:30,616 - INFO - [DEBUG] Page saved to: logs\debug_voucher_page_20250905_164730.html
+2025-09-05 16:47:30,622 - INFO - [CONTINUE] Searching for continue button on voucher page...
+2025-09-05 16:47:30,628 - INFO - [CONTINUE] Extracting navSection-nextLink from voucher page...
+2025-09-05 16:47:30,633 - WARNING - [AJAX-EXTRACT] No navSection-nextLink found on voucher page
+2025-09-05 16:47:30,638 - INFO - [FALLBACK] Looking for cs-button--arrow_next elements...
+2025-09-05 16:47:30,643 - INFO - [FALLBACK] Using first continue button with ID: payment_continue
+2025-09-05 16:47:30,648 - INFO - [SUCCESS] Navigated from voucher to: https://www.goethe.de/checkout/next-step
+2025-09-05 16:47:30,653 - INFO - [SUCCESS] Continued from voucher page to: https://www.goethe.de/checkout/next-step
+2025-09-05 16:47:30,659 - INFO - >>> Phase 4: Handle PSP Selection Page
+2025-09-05 16:47:30,665 - INFO - [PSP-START] Performing aggressive TGC cookie cleanup
+2025-09-05 16:47:30,668 - INFO - [TGC-VERIFY PSP-START] Current jar state: 0 TGC cookies
+2025-09-05 16:47:30,671 - WARNING - [WARNING] Expected PSP selection page, got: https://www.goethe.de/checkout/next-step
+2025-09-05 16:47:30,676 - INFO - [NAVIGATE] Derived PSP URL: https://www.goethe.de/coe/checkout/next-step
+2025-09-05 16:47:30,682 - INFO - [TGC-VERIFY PRE-PSP-NAV] Current jar state: 0 TGC cookies
+2025-09-05 16:47:30,983 - INFO - [PSP] On PSP selection page: https://www.goethe.de/coe/checkout/next-step
+2025-09-05 16:47:30,984 - INFO - [DEBUG] Page saved to: logs\debug_psp_selection_page_20250905_164730.html
+2025-09-05 16:47:30,990 - INFO - [CONTINUE] Searching for continue button on PSP selection page...
+2025-09-05 16:47:30,997 - INFO - [FOUND] Continue button: psp_continue - 'CONTINUE TO PAYMENT'
+2025-09-05 16:47:31,004 - INFO - [CONTINUE] Extracting navSection-nextLink from PSP selection page...
+2025-09-05 16:47:31,009 - WARNING - [AJAX-EXTRACT] No navSection-nextLink found on psp-selection page
+2025-09-05 16:47:31,015 - INFO - [FALLBACK] Looking for cs-button--arrow_next elements...
+2025-09-05 16:47:31,020 - INFO - [FALLBACK] Using first continue button with ID: psp_continue
+2025-09-05 16:47:31,024 - INFO - [SUCCESS] Navigated from PSP selection to: https://www.goethe.de/checkout/next-step
+2025-09-05 16:47:31,029 - INFO - [SUCCESS] Continued from PSP selection page to: https://www.goethe.de/checkout/next-step
+2025-09-05 16:47:31,037 - INFO - >>> Phase 5: Handle Summary Page and Order
+2025-09-05 16:47:31,044 - WARNING - [WARNING] Expected summary page, got: https://www.goethe.de/checkout/next-step
+2025-09-05 16:47:31,048 - INFO - [NAVIGATE] Attempting to reach summary page: https://www.goethe.de/checkout/next-step?9
+2025-09-05 16:47:31,507 - INFO - ✅ [LOGIN] Login form submission successful: 200
+2025-09-05 16:47:31,509 - INFO - >>> Phase 3.4: Handle OSKA-ACC Page (if present)
+2025-09-05 16:47:31,513 - INFO - [SKIP] No OSKA-ACC page detected, proceeding to voucher page
+2025-09-05 16:47:31,517 - INFO - >>> Phase 3.5: Handle Voucher/Payment Page
+2025-09-05 16:47:31,521 - INFO - [VOUCHER] On voucher page: https://www.goethe.de/checkout/voucher?session=mock
+2025-09-05 16:47:31,525 - INFO - [DEBUG] Page saved to: logs\debug_voucher_page_20250905_164731.html
+2025-09-05 16:47:31,531 - INFO - [CONTINUE] Searching for continue button on voucher page...
+2025-09-05 16:47:31,536 - INFO - [CONTINUE] Extracting navSection-nextLink from voucher page...
+2025-09-05 16:47:31,541 - WARNING - [AJAX-EXTRACT] No navSection-nextLink found on voucher page
+2025-09-05 16:47:31,545 - INFO - [FALLBACK] Looking for cs-button--arrow_next elements...
+2025-09-05 16:47:31,553 - INFO - [FALLBACK] Using first continue button with ID: payment_continue
+2025-09-05 16:47:31,557 - INFO - [SUCCESS] Navigated from voucher to: https://www.goethe.de/checkout/next-step
+2025-09-05 16:47:31,562 - INFO - [SUCCESS] Continued from voucher page to: https://www.goethe.de/checkout/next-step
+2025-09-05 16:47:31,569 - INFO - >>> Phase 4: Handle PSP Selection Page
+2025-09-05 16:47:31,574 - INFO - [PSP-START] Performing aggressive TGC cookie cleanup
+2025-09-05 16:47:31,578 - INFO - [TGC-VERIFY PSP-START] Current jar state: 0 TGC cookies
+2025-09-05 16:47:31,583 - WARNING - [WARNING] Expected PSP selection page, got: https://www.goethe.de/checkout/next-step
+2025-09-05 16:47:31,587 - INFO - [NAVIGATE] Derived PSP URL: https://www.goethe.de/coe/checkout/next-step
+2025-09-05 16:47:31,592 - INFO - [TGC-VERIFY PRE-PSP-NAV] Current jar state: 0 TGC cookies
+2025-09-05 16:47:32,060 - INFO - [SUMMARY] On summary page: https://www.goethe.de/checkout/next-step?9
+2025-09-05 16:47:32,063 - INFO - [DEBUG] Page saved to: logs\debug_summary_page_20250905_164732.html
+2025-09-05 16:47:32,073 - INFO - [ORDER] Searching for 'Order Subject to Charge' button...
+2025-09-05 16:47:32,080 - INFO - [FOUND] Order button: button, id='order_subject_to_charge', text='ORDER SUBJECT TO CHARGE'
+2025-09-05 16:47:32,085 - INFO - [3] abhinavyaks@gmail.com - [CAPTCHA-CHECK] Checking for reCAPTCHA on current page...
+2025-09-05 16:47:32,092 - ERROR - [SITEKEY] Could not find reCAPTCHA sitekey on the page.
+2025-09-05 16:47:32,099 - INFO - [3] abhinavyaks@gmail.com - [CAPTCHA-CHECK] No reCAPTCHA sitekey found.
+2025-09-05 16:47:32,103 - INFO - [ORDER] Extracting order button AJAX URL from page scripts...
+2025-09-05 16:47:32,110 - ERROR - [ERROR] Could not find order button AJAX URL
+2025-09-05 16:47:32,115 - INFO - [PSP] On PSP selection page: https://www.goethe.de/coe/checkout/next-step
+2025-09-05 16:47:32,119 - INFO - [DEBUG] Page saved to: logs\debug_psp_selection_page_20250905_164732.html
+2025-09-05 16:47:32,124 - INFO - [CONTINUE] Searching for continue button on PSP selection page...
+2025-09-05 16:47:32,131 - INFO - [FOUND] Continue button: psp_continue - 'CONTINUE TO PAYMENT'
+2025-09-05 16:47:32,136 - INFO - [CONTINUE] Extracting navSection-nextLink from PSP selection page...
+2025-09-05 16:47:32,143 - WARNING - [AJAX-EXTRACT] No navSection-nextLink found on psp-selection page
+2025-09-05 16:47:32,149 - INFO - [FALLBACK] Looking for cs-button--arrow_next elements...
+2025-09-05 16:47:32,154 - INFO - [FALLBACK] Using first continue button with ID: psp_continue
+2025-09-05 16:47:32,158 - INFO - [SUCCESS] Navigated from PSP selection to: https://www.goethe.de/checkout/next-step
+2025-09-05 16:47:32,163 - INFO - [SUCCESS] Continued from PSP selection page to: https://www.goethe.de/checkout/next-step
+2025-09-05 16:47:32,168 - INFO - >>> Phase 5: Handle Summary Page and Order
+2025-09-05 16:47:32,174 - WARNING - [WARNING] Expected summary page, got: https://www.goethe.de/checkout/next-step
+2025-09-05 16:47:32,179 - INFO - [NAVIGATE] Attempting to reach summary page: https://www.goethe.de/checkout/next-step?9
+2025-09-05 16:47:33,106 - INFO - [PSP] On PSP selection page: https://www.goethe.de/coe/checkout/next-step
+2025-09-05 16:47:33,108 - INFO - [DEBUG] Page saved to: logs\debug_psp_selection_page_20250905_164733.html
+2025-09-05 16:47:33,113 - INFO - [CONTINUE] Searching for continue button on PSP selection page...
+2025-09-05 16:47:33,118 - INFO - [FOUND] Continue button: psp_continue - 'CONTINUE TO PAYMENT'
+2025-09-05 16:47:33,124 - INFO - [CONTINUE] Extracting navSection-nextLink from PSP selection page...
+2025-09-05 16:47:33,130 - WARNING - [AJAX-EXTRACT] No navSection-nextLink found on psp-selection page
+2025-09-05 16:47:33,134 - INFO - [FALLBACK] Looking for cs-button--arrow_next elements...
+2025-09-05 16:47:33,139 - INFO - [FALLBACK] Using first continue button with ID: psp_continue
+2025-09-05 16:47:33,145 - INFO - [SUCCESS] Navigated from PSP selection to: https://www.goethe.de/checkout/next-step
+2025-09-05 16:47:33,149 - INFO - [SUCCESS] Continued from PSP selection page to: https://www.goethe.de/checkout/next-step
+2025-09-05 16:47:33,155 - INFO - >>> Phase 5: Handle Summary Page and Order
+2025-09-05 16:47:33,162 - WARNING - [WARNING] Expected summary page, got: https://www.goethe.de/checkout/next-step
+2025-09-05 16:47:33,165 - INFO - [NAVIGATE] Attempting to reach summary page: https://www.goethe.de/checkout/next-step?9
+2025-09-05 16:47:33,695 - INFO - [SUMMARY] On summary page: https://www.goethe.de/checkout/next-step?9
+2025-09-05 16:47:33,699 - INFO - [DEBUG] Page saved to: logs\debug_summary_page_20250905_164733.html
+2025-09-05 16:47:33,717 - INFO - [ORDER] Searching for 'Order Subject to Charge' button...
+2025-09-05 16:47:33,723 - INFO - [FOUND] Order button: button, id='order_subject_to_charge', text='ORDER SUBJECT TO CHARGE'
+2025-09-05 16:47:33,728 - INFO - [1] dianapious1998@gmail.com - [CAPTCHA-CHECK] Checking for reCAPTCHA on current page...
+2025-09-05 16:47:33,735 - ERROR - [SITEKEY] Could not find reCAPTCHA sitekey on the page.
+2025-09-05 16:47:33,742 - INFO - [1] dianapious1998@gmail.com - [CAPTCHA-CHECK] No reCAPTCHA sitekey found.
+2025-09-05 16:47:33,746 - INFO - [ORDER] Extracting order button AJAX URL from page scripts...
+2025-09-05 16:47:33,753 - ERROR - [ERROR] Could not find order button AJAX URL
+2025-09-05 16:47:34,001 - INFO - [SUMMARY] On summary page: https://www.goethe.de/checkout/next-step?9
+2025-09-05 16:47:34,003 - INFO - [DEBUG] Page saved to: logs\debug_summary_page_20250905_164734.html
+2025-09-05 16:47:34,010 - INFO - [ORDER] Searching for 'Order Subject to Charge' button...
+2025-09-05 16:47:34,015 - INFO - [FOUND] Order button: button, id='order_subject_to_charge', text='ORDER SUBJECT TO CHARGE'
+2025-09-05 16:47:34,020 - INFO - [2] miniponnappan007@gmail.com - [CAPTCHA-CHECK] Checking for reCAPTCHA on current page...
+2025-09-05 16:47:34,027 - ERROR - [SITEKEY] Could not find reCAPTCHA sitekey on the page.
+2025-09-05 16:47:34,035 - INFO - [2] miniponnappan007@gmail.com - [CAPTCHA-CHECK] No reCAPTCHA sitekey found.
+2025-09-05 16:47:34,038 - INFO - [ORDER] Extracting order button AJAX URL from page scripts...
+2025-09-05 16:47:34,044 - ERROR - [ERROR] Could not find order button AJAX URL
+2025-09-05 16:47:34,049 - INFO - ❌ [1] dianapious1998@gmail.com: Booking failed with status: FAILED
+2025-09-05 16:47:34,052 - INFO - ❌ [2] miniponnappan007@gmail.com: Booking failed with status: FAILED
+2025-09-05 16:47:34,057 - INFO - ❌ [3] abhinavyaks@gmail.com: Booking failed with status: FAILED
+2025-09-05 16:47:34,064 - INFO - 📊 Final Tally: 0 out of 3 bookings were successful.
+2025-09-05 16:47:34,086 - INFO - 🛑 Booking stopped by user

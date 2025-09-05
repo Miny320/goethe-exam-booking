@@ -457,6 +457,14 @@ except ImportError:
                             </div>
                         </div>
                     </main>
+                    <script>
+                        window.orderButtonLink = 'https://www.goethe.de/checkout/complete?session=mock';
+                        Wicket.Ajax.ajax({
+                            "u": "orderButtonLink",
+                            "ep": {"event": "click"},
+                            "c": "order_subject_to_charge"
+                        });
+                    </script>
                     </body>'''
             elif "next-step" in url:
                 # Phase 3 - Participant selection (based on 3.html analysis)
@@ -578,6 +586,14 @@ except ImportError:
                             </div>
                         </div>
                     </main>
+                    <script>
+                        window.orderButtonLink = 'https://www.goethe.de/checkout/complete?session=mock';
+                        Wicket.Ajax.ajax({
+                            "u": "orderButtonLink",
+                            "ep": {"event": "click"},
+                            "c": "order_subject_to_charge"
+                        });
+                    </script>
                     </body>'''
             elif "complete" in url or "success" in url:
                 # Phase 6 - Booking Completion/Success page
@@ -3311,8 +3327,14 @@ class GoetheAPIBot:
                 if 'Wicket.Ajax.ajax' in script_text:
                     # Look for the nextLink URL (order button uses the same pattern)
                     import re
-                    pattern = r'Wicket\.Ajax\.ajax\(\{"u":"([^"]*navSection-nextLink[^"]*)"'
+                    # First try to find orderButtonLink (for order submission)
+                    pattern = r'Wicket\.Ajax\.ajax\(\{"u":"([^"]*orderButtonLink[^"]*)"'
                     matches = re.findall(pattern, script_text)
+                    
+                    if not matches:
+                        # Fallback to navSection-nextLink pattern
+                        pattern = r'Wicket\.Ajax\.ajax\(\{"u":"([^"]*navSection-nextLink[^"]*)"'
+                        matches = re.findall(pattern, script_text)
                     
                     if matches:
                         for match in matches:
