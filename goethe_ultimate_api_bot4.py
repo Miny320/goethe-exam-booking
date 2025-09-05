@@ -3331,11 +3331,6 @@ class GoetheAPIBot:
                     pattern = r'Wicket\.Ajax\.ajax\(\{"u":"([^"]*orderButtonLink[^"]*)"'
                     matches = re.findall(pattern, script_text)
                     
-                    if not matches:
-                        # Fallback to navSection-nextLink pattern
-                        pattern = r'Wicket\.Ajax\.ajax\(\{"u":"([^"]*navSection-nextLink[^"]*)"'
-                        matches = re.findall(pattern, script_text)
-                    
                     if matches:
                         for match in matches:
                             relative_url = match
@@ -3344,6 +3339,28 @@ class GoetheAPIBot:
                             order_ajax_url = urljoin(str(response.url), relative_url)
                             logger.info(f"[ORDER] Found order AJAX URL: {order_ajax_url}")
                             break
+                    
+                    if not order_ajax_url and 'orderButtonLink' in script_text:
+                        # Extract the URL from window.orderButtonLink
+                        url_pattern = r'window\.orderButtonLink\s*=\s*[\'"]([^\'"]*)[\'"]'
+                        url_matches = re.findall(url_pattern, script_text)
+                        if url_matches:
+                            order_ajax_url = url_matches[0]
+                            logger.info(f"[ORDER] Found order AJAX URL from window.orderButtonLink: {order_ajax_url}")
+                    
+                    if not order_ajax_url:
+                        # Fallback to navSection-nextLink pattern
+                        pattern = r'Wicket\.Ajax\.ajax\(\{"u":"([^"]*navSection-nextLink[^"]*)"'
+                        matches = re.findall(pattern, script_text)
+                        
+                        if matches:
+                            for match in matches:
+                                relative_url = match
+                                if relative_url.startswith('./'):
+                                    relative_url = relative_url[2:]
+                                order_ajax_url = urljoin(str(response.url), relative_url)
+                                logger.info(f"[ORDER] Found order AJAX URL: {order_ajax_url}")
+                                break
                 
                 if order_ajax_url:
                     break
