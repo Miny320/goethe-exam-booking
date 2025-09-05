@@ -3321,15 +3321,20 @@ class GoetheAPIBot:
             scripts = soup.find_all('script', type='text/javascript')
             order_ajax_url = None
 
+            logger.info(f"[DEBUG] Found {len(scripts)} script tags")
+            
             for script in scripts:
                 script_text = script.get_text() if script else ""
+                logger.info(f"[DEBUG] Script content: {script_text[:200]}...")
                 
                 if 'Wicket.Ajax.ajax' in script_text:
+                    logger.info("[DEBUG] Found Wicket.Ajax.ajax in script")
                     # Look for the nextLink URL (order button uses the same pattern)
                     import re
                     # First try to find orderButtonLink (for order submission)
                     pattern = r'Wicket\.Ajax\.ajax\(\{"u":"([^"]*orderButtonLink[^"]*)"'
                     matches = re.findall(pattern, script_text)
+                    logger.info(f"[DEBUG] orderButtonLink pattern matches: {matches}")
                     
                     if matches:
                         for match in matches:
@@ -3341,17 +3346,21 @@ class GoetheAPIBot:
                             break
                     
                     if not order_ajax_url and 'orderButtonLink' in script_text:
+                        logger.info("[DEBUG] Looking for window.orderButtonLink")
                         # Extract the URL from window.orderButtonLink
                         url_pattern = r'window\.orderButtonLink\s*=\s*[\'"]([^\'"]*)[\'"]'
                         url_matches = re.findall(url_pattern, script_text)
+                        logger.info(f"[DEBUG] window.orderButtonLink matches: {url_matches}")
                         if url_matches:
                             order_ajax_url = url_matches[0]
                             logger.info(f"[ORDER] Found order AJAX URL from window.orderButtonLink: {order_ajax_url}")
                     
                     if not order_ajax_url:
+                        logger.info("[DEBUG] Trying navSection-nextLink fallback")
                         # Fallback to navSection-nextLink pattern
                         pattern = r'Wicket\.Ajax\.ajax\(\{"u":"([^"]*navSection-nextLink[^"]*)"'
                         matches = re.findall(pattern, script_text)
+                        logger.info(f"[DEBUG] navSection-nextLink matches: {matches}")
                         
                         if matches:
                             for match in matches:
