@@ -460,7 +460,10 @@ class GoetheAPIBotGUI:
     
     def clear_logs(self):
         """Clear the log area"""
+        # Ensure widget is writable while clearing
+        self.log_text.configure(state='normal')
         self.log_text.delete(1.0, tk.END)
+        self.log_text.configure(state='disabled')
         self.log_message("Logs cleared")
     
     def save_logs(self):
@@ -621,7 +624,7 @@ class GoetheAPIBotGUI:
     def load_configuration(self):
         """Loads configuration and provides user feedback."""
         self.load_configuration_on_startup()
-        if self.config_status_var.get() == "✅ Bright Data configuration loaded.":
+        if self.config_status_var.get() == "✅ Proxy List configuration loaded.":
             self.log_message("✅ Configuration loaded from gui_config.json")
         else:
             self.log_message("ℹ️ No configuration file found.")
@@ -735,7 +738,9 @@ class GoetheAPIBotGUI:
         self.single_status_var.set("🚀 Starting single user booking...")
         
         # Clear log
+        self.log_text.configure(state='normal')
         self.log_text.delete(1.0, tk.END)
+        self.log_text.configure(state='disabled')
         
         # Start booking in separate thread
         thread = threading.Thread(target=self.run_single_booking_async, daemon=True)
@@ -756,7 +761,9 @@ class GoetheAPIBotGUI:
         self.multi_status_var.set("🚀 Starting multi-user booking...")
         
         # Clear log
+        self.log_text.configure(state='normal')
         self.log_text.delete(1.0, tk.END)
+        self.log_text.configure(state='disabled')
         
         # Start booking in separate thread
         thread = threading.Thread(target=self.run_multi_booking_async, daemon=True)
@@ -814,15 +821,18 @@ class GoetheAPIBotGUI:
         
         # Use the static proxy list 
         proxies = config['proxies']
-        
-        if len(proxies) < 2:
+
+        use_proxies = self.use_proxies_var.get()
+
+        if use_proxies and len(proxies) < 2:
             self.log_message(f"❌ Error: Single user booking requires at least 2 proxies, but only {len(proxies)} provided.")
             self.single_status_var.set("❌ Not Enough Proxies")
             self.stop_booking()
             return
-            
+
         monitor_proxy = None # Use server IP
-        booking_proxies = proxies # Use the generated sticky sessions
+        # If proxies are disabled, fall back to using main server IP for booking attempts
+        booking_proxies = proxies if use_proxies else [None]
 
         modules = self.get_selected_modules()
         email = self.email_var.get().strip()
@@ -854,9 +864,10 @@ class GoetheAPIBotGUI:
                 for i, proxy in enumerate(booking_proxies):
                     if not self.is_running: break
                     
-                    proxy_info = f"Booking Proxy {i+1}/{len(booking_proxies)} ({proxy.split('@')[-1]})"
+                    proxy_display = proxy.split('@')[-1] if proxy else 'Main Server IP'
+                    proxy_info = f"Booking Proxy {i+1}/{len(booking_proxies)} ({proxy_display})"
                     self.log_message("-" * 50)
-                    self.log_message(f"⚡ Attempting booking with clean IP: {proxy_info}")
+                    self.log_message(f"⚡ Attempting booking with IP: {proxy_info}")
                     self.single_status_var.set(f"⚡ Booking with {proxy_info}")
 
                     booking_bot = GoetheAPIBot(
