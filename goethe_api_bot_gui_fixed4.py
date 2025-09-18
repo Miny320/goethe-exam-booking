@@ -26,12 +26,10 @@ except ImportError:
     def urljoin(base, url):
         return url
 
-# Import the main bot
 try:
     from goethe_ultimate_api_bot4 import GoetheBookingManager, GoetheAPIBot, RateLimitException, PersistentServerException
     BOT_AVAILABLE = True
 except ImportError:
-    # Create mock classes for testing without dependencies
     class MockGoetheAPIBot:
         def __init__(self, *args, **kwargs):
             self.final_booked_modules = ['READING', 'LISTENING']
@@ -1226,9 +1224,7 @@ class GoetheAPIBotGUI:
                 self.interval_var.set(str(booking_config.get("monitor_interval", "0.1")))
                 
             else:
-                # Old flat format (backward compatibility)
                 self.exam_url_var.set(config.get("exam_url", ""))
-                # Skip captcha variables - not needed in new GUI
                 self.email_var.set(config.get("email", ""))
                 self.password_var.set(config.get("password", ""))
                 self.csv_file_var.set(config.get("csv_file", ""))
@@ -1249,7 +1245,6 @@ class GoetheAPIBotGUI:
     
     def load_config(self):
         """Load configuration from file"""
-        # Try to load config.json first, then config_template.json
         config_files = ["config.json", "config_template.json"]
         config_file = None
         
